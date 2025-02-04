@@ -1,4 +1,4 @@
-const repo = "THORCollective/HEARTH";
+const repo = "letswastetimee/HEARTH";
 const branch = "main"; // Change this if needed
 const apiBaseUrl = `https://api.github.com/repos/${repo}/contents`;
 
