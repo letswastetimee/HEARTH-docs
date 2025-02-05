@@ -1,0 +1,3 @@
+[submodule "docs/HEARTH"]
+	path = docs/HEARTH
+	url = https://github.com/letswastetimee/HEARTH.git

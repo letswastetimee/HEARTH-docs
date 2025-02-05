@@ -1,8 +1,16 @@
 {
-  // This file is not used in compilation. It is here just for a nice editor experience.
+  "//": "This file is for editor support only and does not affect compilation.",
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
-    "baseUrl": "."
+    "baseUrl": ".",
+    "strict": true,               // Enable strict mode for better type safety
+    "noImplicitAny": true,         // Prevent usage of 'any' type
+    "skipLibCheck": true,          // Skip type checking of node_modules
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,       // Improve compatibility with ES modules
+    "allowJs": true,               // Allow JS files to be imported
+    "resolveJsonModule": true      // Enable importing JSON files
   },
-  "exclude": [".docusaurus", "build"]
+  "include": ["src", "docs", "docusaurus.config.ts", "sidebars.ts"],
+  "exclude": [".docusaurus", "build", "node_modules"]
 }
